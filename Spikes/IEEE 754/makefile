@@ -3,9 +3,6 @@ SOURCE_O = program.o
 PROGRAM = program
 CFLAGS = -Wall -pedantic -std=c11
 
-#all: ${PROGRAM} ${TEST_PROGRAM}
-#${TEST_PROGRAM}: ${TEST_SOURCE}
-
 run: ${PROGRAM}
 	./${PROGRAM}
 
