@@ -2,11 +2,11 @@
 ## This Week: 10/30/2017
 Task | Developer | Risk | Est. Time (hrs) | Actual (hrs) | Progress | Code Review
 --- | --- | --- | --- | --- | --- | ---
-Makefile Configurations | Apolinar | low | 1 | 0 |  0% | 
-GCC Options  | Apolinar | low | 1 | 0 | 0% | 
+Makefile Configurations | Apolinar | low | 1 | 1 |  1000% | 
+GCC Options  | Apolinar | low | 1 | 1 | 100% | 
+Documentation & Coding Standards Spikes | Apolinar | low | 2 | 0 | 0% | 
 Absolute vs realtive Precision Spike | Antonio | low | 1 | 0 | 0% | 
 C-Unit Spikes  | NA | high | NA |  0 | 0% | 
-Documentation & Coding Standards Spikes | NA | low | 2 | 0 | 0% | 
 ____
 ## Previous Weeks
 Task | Developer | Risk | Est. Time (hrs) | Actual (hrs) | Progress | Code Review

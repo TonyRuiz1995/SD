@@ -1,20 +1,20 @@
 ## Stories
-#### Code up a program and test for user input
+#### Create a program to test user input
 ##### Risks
 ##### Time
 ##### Tests
 
-#### Create a method for that checks for imaginary numbers, if no error, return the discriminant
+#### Have the program check for special cases such as imaginary roots or if there is only one root
 ##### Risks
 ##### Time
 ##### Tests
 
-#### Check for numerical input, non-zero A value
+#### Check for numerical input (ie. make sure that the a-coefficient is a non-zero value)
 ##### Risks
 ##### Time
 ##### Tests
 
-#### Take discriminant and other values and return x1,x2
+#### Use the quadratic formule to determine the roots and then return them to the user
 ##### Risks
 ##### Time
 ##### Tests
