@@ -1,27 +1,19 @@
 SOURCE = program.c
+SOURCE_O = program.o
 PROGRAM = program
-#CFLAGS = -Wall - pedantic -stde=
-#CFLAGS = -Wall -d
+CFLAGS = -Wall -pedantic -std=c11
 
-main: ${SOURCE}
-	gcc ${SOURCE} -o ${PROGRAM}
-	#gcc ${FILENAME} -c 
-	#gcc ${FILENAME} ${CFLAGS} -o ${PROGRAM}
+#all: ${PROGRAM} ${TEST_PROGRAM}
+#${TEST_PROGRAM}: ${TEST_SOURCE}
 
 run: ${PROGRAM}
 	./${PROGRAM}
 
-open:
-	#open -a Sublime\ Text program.c makefile
-	open ${SOURCE} makefile README.md
+${PROGRAM}: ${SOURCE_O}
+	gcc -o ${PROGRAM} ${SOURCE_O}
+
+${SOURCE_O}: ${SOURCE}
+	gcc ${CFLAGS} -c ${SOURCE}
 
 clean: 
 	rm -rf *.o *.out ${PROGRAM}
-
-clear:
-	clear
-	clear
-
-help:
-	#commands main, run, open, clean, clear, help
-	#files program.c makefile README.md
