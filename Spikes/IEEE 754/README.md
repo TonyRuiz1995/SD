@@ -38,6 +38,11 @@ The purpose of this spike is to test how some floating point operations are hand
 > 1.797693e+308 + 1.000000e+308 = inf
 > -1.797693e+308 - 1.000000e+308 = -inf
 > 1.797693e+308 * 0.000000e+00 = 0.000000e+00
+##### *FLT_MAX*
+> FLT_MAX = 3.402823e+38
+> dbl = FLT_MAX * 2; dbl yields inf
+> dbl = FLT_MAX; dbl *= 2; dbl yeilds 6.805647e+38
+> flt = dbl; flt yields: inf
 ##### *Underflow*
 > 1.000000e+00 / 1.797693e+308 = 5.562685e-309
 > 5.562685e-309 / 1.000000e+15 = 4.940656e-324

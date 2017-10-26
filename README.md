@@ -10,3 +10,8 @@ The purpose of this program is to solve a quadratic equation. This project was a
 ### Resources
  - MarkDown Editor: https://dillinger.io/
  - Print MarkDown: https://gitprint.com/
+
+### Standards, Compiler Options, Etc.
+ - We will be programming using the C language
+ - We will utilize the C Unit testing library to do our testing
+ - gcc is our compiler with -Wall, -pedantic, and -cstd=11 as compiler optionss

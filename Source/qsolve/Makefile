@@ -9,7 +9,7 @@ run_test: ${TEST_PROGRAM}
 	./${TEST_PROGRAM}
 
 ${TEST_PROGRAM}: ${SOURCE_O} ${TEST_SOURCE_O}
-	gcc -o ${TEST_PROGRAM} ${SOURCE_O} ${TEST_SOURCE_O}
+	gcc -o ${TEST_PROGRAM} ${SOURCE_O} ${TEST_SOURCE_O} -lcunit
 
 ${SOURCE_O}: ${SOURCE}
 	gcc ${CFLAGS} -c ${SOURCE}
