@@ -1,22 +1,14 @@
-#include "input.h"
 
-void input (double* a, double* b, double* c)
-{
-	int status = 0;
-	while(status != 1){
-		printf("Please input a double value for a: ");
-	    status = scanf("%lf", a);
+#include<stdio.h>
+#include<string.h>
+int main(int argc, char **argv){
+	
+	char buff[1000] = {};
+	for(int i = 1; i < argc; i++){
+		strcat(buff, argv[i]);
+		strcat(buff, " ");
 	}
-
-	status = 0;
-	while(status != 1){
-		printf("Please input a double value for b: ");
-	    status = scanf("%lf", b);
-	}
-
-	status = 0;
-	while(status != 1){
-		printf("Please input a double value for c: ");
-	    status = scanf("%lf", c);
-	}
+	printf("%s\n",buff);
+	
+	
 }
