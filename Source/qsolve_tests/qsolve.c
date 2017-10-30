@@ -10,6 +10,7 @@
 		a, b, c: coefficients
 		*x1, *x2: roots
 */
+
 int qsolve(double a, double b, double c, double* x1, double* x2)
 {
 	int status = 0;

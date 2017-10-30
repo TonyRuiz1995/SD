@@ -7,7 +7,7 @@ run: ${PROGRAM}
 	./${PROGRAM}
 
 ${PROGRAM}: ${SOURCE_O}
-	gcc -o ${PROGRAM} ${SOURCE_O}
+	gcc -o ${PROGRAM} ${SOURCE_O} -lm
 
 ${SOURCE_O}: ${SOURCE}
 	gcc ${CFLAGS} -c ${SOURCE}
