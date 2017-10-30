@@ -19,32 +19,32 @@ The purpose of this spike is to test how some floating point operations are hand
 
 ## Output
 ##### *∞*
-> inf - inf = nan
-> inf / inf = nan
-> 0.000000e+00 / inf = 0.000000e+00
-> inf * -1.000000e+00 = -inf
-> inf * 0.000000e+00 = nan
-> inf * 2.000000e+00 = inf
+    inf - inf = nan
+    inf / inf = nan
+    0.000000e+00 / inf = 0.000000e+00
+    inf * -1.000000e+00 = -inf
+    inf * 0.000000e+00 = nan
+    inf * 2.000000e+00 = inf
 ##### *NaN*
-> nan + inf = nan
-> nan + 0.000000e+00 = nan
-> nan * inf = nan
+    nan + inf = nan
+    nan + 0.000000e+00 = nan
+    nan * inf = nan
 ##### *Divide By 0*
-> 1.000000e+00 / 0.000000e+00 = inf
-> -1.000000e+00 / 0.000000e+00 = -inf
+    1.000000e+00 / 0.000000e+00 = inf
+    -1.000000e+00 / 0.000000e+00 = -inf
 ##### *DBL_MAX*
-> DBL_MAX = 1.797693e+308
-> 1.797693e+308 + 1.000000e+00 = 1.797693e+308
-> 1.797693e+308 + 1.000000e+308 = inf
-> -1.797693e+308 - 1.000000e+308 = -inf
-> 1.797693e+308 * 0.000000e+00 = 0.000000e+00
+    DBL_MAX = 1.797693e+308
+    1.797693e+308 + 1.000000e+00 = 1.797693e+308
+    1.797693e+308 + 1.000000e+308 = inf
+    -1.797693e+308 - 1.000000e+308 = -inf
+    1.797693e+308 * 0.000000e+00 = 0.000000e+00
 ##### *FLT_MAX*
-> FLT_MAX = 3.402823e+38
-> dbl = FLT_MAX * 2; dbl yields inf
-> dbl = FLT_MAX; dbl *= 2; dbl yeilds 6.805647e+38
-> flt = dbl; flt yields: inf
+    FLT_MAX = 3.402823e+38
+    dbl = FLT_MAX * 2; dbl yields inf
+    dbl = FLT_MAX; dbl *= 2; dbl yeilds 6.805647e+38
+    flt = dbl; flt yields: inf
 ##### *Underflow*
-> 1.000000e+00 / 1.797693e+308 = 5.562685e-309
-> 5.562685e-309 / 1.000000e+15 = 4.940656e-324
-> 4.940656e-324 / 1.000000e+01 = 0.000000e+00
-> 10e+309 = inf
+    1.000000e+00 / 1.797693e+308 = 5.562685e-309
+    5.562685e-309 / 1.000000e+15 = 4.940656e-324
+    4.940656e-324 / 1.000000e+01 = 0.000000e+00
+    10e+309 = inf
