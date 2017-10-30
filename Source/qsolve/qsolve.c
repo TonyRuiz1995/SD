@@ -15,7 +15,7 @@ int qsolve(double a, double b, double c, double* x1, double* x2)
 	int status = 0;
 	double disc = b*b - 4*a*c;
 
-	if(a== 0){
+	if(a == 0){
 		status = 3;
 	}
 	else if(disc < 0){
