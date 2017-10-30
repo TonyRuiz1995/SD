@@ -1,4 +1,7 @@
 ## Stories
+This program will take in the coefficient values _a_, _b_, and _c_ from a quadratic equation. It will then process and print out the roots _x1_ and _x2_. Along with this, it will watch out for special conditions such as when _a = 0_, when the roots are imaginary, and when there's one unique root. The program wil run using a command-line interface and will be programmed using the C language.
+
+
 #### Create a program to test user input
 ##### Risks: Low
 ##### Time: 1 Hour

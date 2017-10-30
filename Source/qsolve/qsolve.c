@@ -13,6 +13,10 @@
 
 int qsolve(double a, double b, double c, double* x1, double* x2)
 {
+	char params[256];
+	sprintf(params, "a=%lf b=%lf c=%lf", a, b, c);
+	myLog("qsolve.c", "qsolve", params);
+
 	int status = 0;
 	double disc = b*b - 4*a*c;
 
