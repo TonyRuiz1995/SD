@@ -2,8 +2,9 @@
 ## This Week: 10/30/2017
 Task | Developer | Risk | Est. Time (hrs) | Actual (hrs) | Progress | Code Review
 --- | --- | --- | --- | --- | --- | ---
+Logging | Apolinar  | low | 2 | 2 | 100% | 
+Output Functionality | Apolinar | low | 1 | 1 | 100% | 
 Documentation & Coding Standards Spikes | Apolinar | low | 2 | 2 | 25% | 
-Logging | Apolinar  | low | 1 | 0 | 0% | 
 Re-Write Stories | Apolinar  | low | 1 | 0 | 0% | 
 ____
 ## Previous Weeks

@@ -47,6 +47,7 @@ void test_imaginary_roots()
 
 int main ()
 {
+	log_start("TEST_QSOLVE", "qsolve/test.c");
 	CU_pSuite pSuite = NULL;
 
 	// Initialize CUnit registry
