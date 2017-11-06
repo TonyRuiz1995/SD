@@ -1,6 +1,6 @@
 # TPS REPORT
 
-## This Week: 10/30/2017
+## This Week: 11/06/2017
 Task | Developer | Risk | Est. Time (hrs) | Actual (hrs) | Progress | Code Review
 --- | --- | --- | --- | --- | --- | ---
 Logging | Apolinar  | low | 2 | 2 | 100% | 
