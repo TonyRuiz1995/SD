@@ -1,28 +1,24 @@
-PS: validate.c
-	gcc validate.c -o validate -g -lm -Wall 
-	
-SOURCE = validate.c
-PROGRAM = validate
-CFLAGS = -g -lm -Wall -pedantic
+SOURCE =validate.c
+SOURCE_O =validate.o
+TEST_SOURCE =test.c
+TEST_SOURCE_O =test.o
+TEST_PROGRAM =test
+LOG_FILE=../log
+LOG_SOURCE_O =${LOG_FILE}/log.o
+CFLAGS =-Wall -pedantic -std=c11
 
+run_test: ${TEST_PROGRAM}
+	./${TEST_PROGRAM}
 
-main: ${SOURCE}
-	gcc ${SOURCE} -o ${PROGRAM} ${CFLAGS}
-	
-run: ${PROGRAM}
-	./${PROGRAM} ${INPUT} > ../output.txt
+${TEST_PROGRAM}: ${SOURCE_O} ${TEST_SOURCE_O}
+	gcc -o ${TEST_PROGRAM} ${SOURCE_O} ${TEST_SOURCE_O} ${LOG_SOURCE_O} -lcunit -lm
 
-open:
-	#open -a Sublime\ Text program.c makefile
-	open ${SOURCE} makefile README.md
+${SOURCE_O}: ${SOURCE}
+	cd ${LOG_FILE}; make
+	gcc ${CFLAGS} -c ${SOURCE}
+
+${TEST_SOURCE_O}: ${TEST_SOURCE}
+	gcc ${CFLAGS} -c ${TEST_SOURCE}	
 
 clean: 
-	rm -rf *.o *.out ${PROGRAM}
-
-clear:
-	clear
-	clear
-
-help:
-	#commands main, run, open, clean, clear, help
-#files program.c makefile README.md
+	rm -rf *.o *.out ${PROGRAM} ${TEST_PROGRAM} log.txt

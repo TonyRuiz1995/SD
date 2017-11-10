@@ -1,5 +1,5 @@
-SOURCE =input.c
-SOURCE_O =input.o
+SOURCE =qsolve.c
+SOURCE_O =qsolve.o
 TEST_SOURCE =test.c
 TEST_SOURCE_O =test.o
 TEST_PROGRAM =test

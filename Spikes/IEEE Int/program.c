@@ -26,7 +26,7 @@ int main()
 	sub(-INT_MAX, 2);
 	mult(INT_MAX, INT_MAX);
 	div(INT_MAX, INT_MAX);
-
+	
 	printf("%d / %d = ", 1, 0);
 	fflush(stdout);
 	printf("%d", 1/0);

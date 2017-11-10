@@ -14,3 +14,14 @@ void output(int status, double x1, double x2)
 		case 3: printf("a=0\n"); break;
 	}
 }
+
+void output_validation(int status)
+{
+	switch(status)
+	{
+		case 0: printf("Input is valid.\n"); break;
+		case 1: printf("Not enough numbers entered!\n"); break;
+		case 2: printf("Not all input are numbers!\n"); break;
+		case 3: printf("Numbers are too big!\n"); break;
+	}
+}
