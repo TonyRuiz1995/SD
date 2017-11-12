@@ -1,6 +1,23 @@
+/*
+#include <fcntl.h>
+#include <unistd.h>
+	
+	// Surpress output from running tests
+	int devNull = open("/dev/null", O_WRONLY);
+	int sout = dup(1);
+	dup2(devNull, 1);
+   	CU_basic_run_tests();
+   	dup2(sout, 1);
+   	close(sout);
+   	close(devNull);
+
+	CU_FAIL("Automatic failure I added here");
+*/
+
 #include <stdio.h>
 #include <math.h>
 #include <float.h>
+#include <fcntl.h>
 #include <CUnit/Basic.h>
 #define MERR 0.0001
 
@@ -63,8 +80,17 @@ int main ()
 
 	// Output results using the basic interface
 	CU_basic_set_mode(CU_BRM_SILENT);
+	
+
+	// Surpress output from running tests
+	int devNull = open("/dev/null", O_WRONLY);
+	int sout = dup(1);
+	dup2(devNull, 1);
    	CU_basic_run_tests();
-   	printf("\nFailures:");
+   	dup2(sout, 1);
+   	close(sout);
+   	close(devNull);
+
    	CU_basic_show_failures(CU_get_failure_list());
    	printf("\n");
 
