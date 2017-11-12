@@ -19,5 +19,3 @@ The purpose of this program is to solve a quadratic equation. This project was a
  ### TO DO 
  - Functional tests for main
  - Coding Standards?
- - One makefile to rule them all
- 	- ERR: the one makefule is not working
