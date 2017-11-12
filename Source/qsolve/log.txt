@@ -1,5 +1,0 @@
-TEST_QSOLVE qsolve/test.c
-qsolve.c qsolve a=0.000000 b=1.000000 c=1.000000
-qsolve.c qsolve a=1.000000 b=0.000000 c=-1.000000
-qsolve.c qsolve a=1.000000 b=2.000000 c=1.000000
-qsolve.c qsolve a=1.000000 b=1.000000 c=1.000000

@@ -1,4 +1,6 @@
 #include "qsolve.h"
+#include <fcntl.h>
+#include <unistd.h>
 #include <CUnit/Basic.h>
 #define MERR 0.000001
 
@@ -73,10 +75,23 @@ int main ()
 
 	// Output results using the basic interface
 	CU_basic_set_mode(CU_BRM_SILENT);
+   	
+	// Surpress output from running tests
+	int devNull = open("/dev/null", O_WRONLY);
+	int sout = dup(1);
+	dup2(devNull, 1);
    	CU_basic_run_tests();
-   	printf("\nFailures:");
-   	CU_basic_show_failures(CU_get_failure_list());
-   	printf("\n");
+   	dup2(sout, 1);
+   	close(sout);
+   	close(devNull);
+
+   	if(CU_get_number_of_failures() > 0)
+   	{
+	   	printf("*********ERRR*********");
+	   	printf("\nqsolve\n");
+	   	CU_basic_show_failures(CU_get_failure_list());
+	   	printf("\n**********************\n");
+   	}
 
 	// clean registry
 	CU_cleanup_registry();

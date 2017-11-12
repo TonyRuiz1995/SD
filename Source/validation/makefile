@@ -3,22 +3,20 @@ SOURCE_O =validate.o
 TEST_SOURCE =test.c
 TEST_SOURCE_O =test.o
 TEST_PROGRAM =test
-LOG_FILE=../log
-LOG_SOURCE_O =${LOG_FILE}/log.o
 CFLAGS =-Wall -pedantic -std=c11
 
 run_test: ${TEST_PROGRAM}
 	./${TEST_PROGRAM}
 
 ${TEST_PROGRAM}: ${SOURCE_O} ${TEST_SOURCE_O}
-	gcc -o ${TEST_PROGRAM} ${SOURCE_O} ${TEST_SOURCE_O} ${LOG_SOURCE_O} -lcunit -lm
+	gcc -o ${TEST_PROGRAM} ${SOURCE_O} ${TEST_SOURCE_O} ../log/log.o -lcunit -lm
 
 ${SOURCE_O}: ${SOURCE}
-	cd ${LOG_FILE}; make
+	cd ../log; make
 	gcc ${CFLAGS} -c ${SOURCE}
 
 ${TEST_SOURCE_O}: ${TEST_SOURCE}
 	gcc ${CFLAGS} -c ${TEST_SOURCE}	
 
 clean: 
-	rm -rf *.o *.out ${PROGRAM} ${TEST_PROGRAM} log.txt
+	rm -rf *.o *.out ${TEST_PROGRAM} log.txt
