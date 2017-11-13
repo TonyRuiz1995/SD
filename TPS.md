@@ -3,14 +3,14 @@
 ## This Week: 11/06/2017
 Task | Developer | Risk | Est. Time (hrs) | Actual (hrs) | Progress | Code Review
 --- | --- | --- | --- | --- | --- | ---
-Logging | Apolinar  | low | 2 | 2 | 100% | 
-Cunit Testing | Apolinar | low | 1 | 1 | 100% | 
-Overflow and Underflow Spike | Antonio Ruiz | low | 2 | 2 | 100% | 
-Re-Write Stories | Apolinar  | low | 1 | 0 | 100% | 
+Main Sytem Testing | Apolinar  | low | 2 | 2 | 100% | 
 ____
 ## Previous Weeks
 Task | Developer | Risk | Est. Time (hrs) | Actual (hrs) | Progress | Code Review
 --- | --- | --- | --- | --- | --- | ---
+Cunit Testing | Apolinar | low | 1 | 1 | 100% | 
+Overflow and Underflow Spike | Antonio Ruiz | low | 2 | 2 | 100% | 
+Re-Write Stories | Apolinar  | low | 1 | 0 | 100% | 
 Logging | Apolinar  | low | 2 | 2 | 100% | 
 Output Functionality | Apolinar | low | 1 | 1 | 100% | 
 Documentation & Coding Standards Spikes | Apolinar | low | 2 | 2 | 25% | 
