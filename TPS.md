@@ -4,6 +4,9 @@
 Task | Developer | Risk | Est. Time (hrs) | Actual (hrs) | Progress | Code Review
 --- | --- | --- | --- | --- | --- | ---
 Main Sytem Testing | Apolinar  | low | 2 | 2 | 100% | 
+Transformation and Exploration of NHANES | Tony  | medium | 3 | 3 | 100% | 
+Data Cleaning on NHANES | Jake  | medium | 3 | 3 | 100% | 
+
 ____
 ## Previous Weeks
 Task | Developer | Risk | Est. Time (hrs) | Actual (hrs) | Progress | Code Review
