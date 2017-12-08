@@ -15,3 +15,6 @@ clean:
 
 log_peek:
 	cd ./main; cat log.txt
+
+run_tests:
+	cd ./main; make run_tests
