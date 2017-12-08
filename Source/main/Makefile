@@ -16,8 +16,14 @@ silent:
 run: ${PROGRAM}
 	./${PROGRAM}
 
+run_tests: ${PROGRAM}
+	cd ../input; make run_test
+	cd ../validation; make run_test
+	cd ../qsolve; make run_test
+	cd ../output; make run_test
+
 # Make Object Files
-#With Logging Off
+	# Logging Off
 silent_source: 
 	cd ../log; make clean; make silent;
 	cd ../input; make
@@ -27,7 +33,7 @@ silent_source:
 	gcc ${CFLAGS} -c ${SOURCE}
 
 
-# With Logging On
+	# Logging On
 ${SOURCE_O}: ${SOURCE}
 	cd ../log; make clean; make
 	cd ../input; make

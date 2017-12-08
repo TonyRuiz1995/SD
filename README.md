@@ -14,8 +14,4 @@ The purpose of this program is to solve a quadratic equation. This project was a
 ## Standards, Compiler Options, Etc.
  - We will be programming using the C language
  - We will utilize the [C Unit](http://cunit.sourceforge.net/doc/introduction.html) testing library to do our testing
- - gcc is our compiler with -Wall, -pedantic, and -std=11 as compiler options
-
-## TO DO 
- - Functional tests for main
- - Coding Standards?
+ - gcc is our compiler with -Wall, -pedantic, and -std=c11 as compiler options
