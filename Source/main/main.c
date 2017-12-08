@@ -6,7 +6,7 @@
 
 int main()
 {
-	char buff[3000];
+	char buff[3000], outs[250], outs_validate[250];
 	double a, b, c, x1, x2;
 	int qstat, vStat;
 	log_start("MAIN", "main/main.c");
@@ -17,11 +17,13 @@ int main()
 	
 	if(vStat != 0)
 	{
-		output_validation(vStat);
+		output_validation(vStat, outs_validate);
+		printf(outs_validate);
 	}
 	else
 	{
 		qstat = qsolve(a, b, c, &x1, &x2);
-		output(qstat, x1, x2);
+		output(qstat, x1, x2, outs);
+		printf(outs);
 	}
 }
