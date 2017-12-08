@@ -6,12 +6,11 @@ TEST_PROGRAM =test
 OTHER_SOURCE_O=../qsolve/qsolve.o ../validation/validate.o
 CFLAGS =-Wall -pedantic -std=c11
 
-${TEST_PROGRAM}: ${SOURCE_O} ${TEST_SOURCE_O}
-	gcc -o ${TEST_PROGRAM} ${SOURCE_O} ${TEST_SOURCE_O} ${OTHER_SOURCE_O} ../log/log.o -lcunit -lm
-
-# Runs sample program
 run_test: ${TEST_PROGRAM}
 	./${TEST_PROGRAM}
+
+${TEST_PROGRAM}: ${SOURCE_O} ${TEST_SOURCE_O}
+	gcc -o ${TEST_PROGRAM} ${SOURCE_O} ${TEST_SOURCE_O} ${OTHER_SOURCE_O} ../log/log.o -lcunit -lm
 
 ${SOURCE_O}: ${SOURCE}
 	cd ../log; make

@@ -12,3 +12,6 @@ run:
 # Clean up
 clean:
 	cd ./main; make clean_all
+
+log_peek:
+	cd ./main; cat log.txt
