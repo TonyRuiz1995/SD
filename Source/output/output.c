@@ -1,10 +1,15 @@
+// Defines output functions for the quad solver
 #include "output.h"
 
+// Generates output for the qsolve output
+	// status: notes case for quadratic solver
+	// x1, x2: roots
+	// outs: (out) where the output is saved to
 void output(int status, double x1, double x2, char outs[])
 {
 	char params[255];
 	sprintf(params, "status=%d, x1=%lf, x2=%lf", status, x1, x2);
-	myLog("output.c", "output", params);
+	my_log("output.c", "output", params);
 
 	switch(status)
 	{
@@ -15,11 +20,14 @@ void output(int status, double x1, double x2, char outs[])
 	}
 }
 
+// Generates output for the validation status
+	// status: status returned by validate function
+	// outs: (out) where the output is saved to
 void output_validation(int status, char outs[])
 {
 	char params[255];
 	sprintf(params, "status=%d", status);
-	myLog("output.c", "output_validation", params);
+	my_log("output.c", "output_validation", params);
 
 	switch(status)
 	{

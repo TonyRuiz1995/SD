@@ -11,6 +11,11 @@ The purpose of this program is to solve a quadratic equation. This project was a
  - [Print MarkDown](https://gitprint.com/)
  - [Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
+## Programming Standards
+ We have accepted [GNU](https://www.gnu.org/prep/standards/html_node/Writing-C.html) as for our programming standards.
+ - The unit tests are exempt from these standards
+
+
 ## Standards, Compiler Options, Etc.
  - We will be programming using the C language
  - We will utilize the [C Unit](http://cunit.sourceforge.net/doc/introduction.html) testing library to do our testing
